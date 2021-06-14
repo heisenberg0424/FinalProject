@@ -7,7 +7,7 @@
 - Open source的裝置模擬器
 - User space emulation可以模擬不同架構的裝置，對於大部分採用MIPS/ARM架構的IOT裝置模擬十分有幫助
 - 有提供許多的架構支援\
-![QEMU](qemulist.png)
+![QEMU](qemu.png)
 
 
 #### 執行問題
