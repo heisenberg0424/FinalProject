@@ -15,7 +15,8 @@
 # 如何攻擊
 ## 連線到CNC 
     telnet "IP" 
-    ＃username/password : root 
+    ＃username/password : root
+![CNClogin](cnclogin.png)
 ## Attack(udp)
     udpplain targetIP 5 dport=UDPport
 # Mirai觀察結果
@@ -25,6 +26,7 @@
 ## 成功感染
 密碼破解後，病毒會向Loader傳送裝置資訊以注入病毒。 \
 受感染後，會掃描是否有其他病毒並將其清除(600秒一次)
+![search](search.png)
 ## 其他
 在看過網路上資安專家的原始碼分析後，還有發現裝置感染後病毒會馬上消滅任何使用port 22,23,80(ssh,telnet,http)的process
 # 遭遇的問題
@@ -40,7 +42,7 @@ Mirai的變種大多數還是使用字典攻擊，複雜密碼可以預防被破
 通用性高
 ## 問題討論
 ### 產生密碼
-需要找出好方法產生“隨機”且安全的密碼 避免重複 \
+需要找出好方法產生“隨機”且安全的密碼 避免重複 
 ### 密碼保存
 明碼儲存可能有資安問題
 ### 通訊安全
